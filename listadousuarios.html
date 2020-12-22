@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Usuarios</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+     
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    
+   
+</head>
+<body>
+    <h1>Listado de usuarios</h1>
+    <div>
+        <table id="usuarios" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID Usuario</th>
+                    <th>Rut Usuario</th>
+                    <th>Nombre Usuario</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>11111111-1</td>
+                <td>Miguel</td>
+                <td>Analista</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>22222222-2</td>
+                <td>Franco</td>
+                <td>Desarrollador</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>33333333-3</td>
+                <td>Juan</td>
+                <td>Contador</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>44444444-4</td>
+                <td>Manuel</td>
+                <td>Desrrollador</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+  <script>
+    $(document).ready(function () {
+        $('#usuarios').DataTable();
+        
+    });
+  </script>    
+</body>
+</html>
